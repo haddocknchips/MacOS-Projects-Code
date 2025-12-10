@@ -1,0 +1,34 @@
+* First Heading
+
+    Here is *some* content!
+
+    1. One
+    2. Two
+       
+
+    Here is the [[https://orgmode.org][Org Mode homepage]]
+
+    | Name  | Age | Uses Emacs |
+    | David |  37 | Yes        |
+    | Harry |  50 | Maybe      |
+
+    - [X] First item
+    - [ ] Second item
+    - [X] Third item
+ 
+
+** Sub-Heading 
+
+Here is some more content! 
+
+* Inserted Heading
+
+    #+begin_scr python3
+
+    print("Hello Emacs!")
+
+    #+end_src
+
+* Second Heading
+
+
