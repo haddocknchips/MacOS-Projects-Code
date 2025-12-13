@@ -1,11 +1,10 @@
-* First Heading
+* DONE First Heading
 
     Here is *some* content!
 
     1. One
     2. Two
        
-
     Here is the [[https://orgmode.org][Org Mode homepage]]
 
     | Name  | Age | Uses Emacs |

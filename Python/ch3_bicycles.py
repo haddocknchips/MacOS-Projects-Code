@@ -105,3 +105,56 @@ print(f"\nDear {guests[1].title()}, I would be most grateful if you could join m
 del guests[0]
 del guests[0]
 print(guests)
+
+# Sorting
+
+cars = ['bmw', 'audi', 'toyoto', 'subaru']
+cars.sort()
+print(cars)
+cars.sort(reverse=True)
+print(cars)
+print(len(cars))
+
+# 3-8 Seeing the world
+
+places = ['hokkaido', 'south pole', 'cairo', 'reykyavik', 'oslo']
+print(places)
+print(sorted(places))
+print(places)
+places.reverse()
+print(places)
+places.reverse()
+print(places)
+places.sort()
+print(places)
+places.sort(reverse=True)
+print(places)
+
+# 3-9 Dinner guests
+
+print("\n")
+guests = ['albert einstein', 'nelson mandela', 'abraham lincoln', 'andres bonifacio', 'warren buffett', 'blaise pascal']
+print(guests)
+print(len(guests))
+
+# 3-10 Every function
+
+cars = ['volkwagen beetle', 'suzuki vitara', 'mb 230e', 'land rover discovery', 'bmw x5']
+print(f"My first car was a {cars[0].title()}. ")
+cars.append('bmw x5')
+print(cars)
+cars.pop(5)
+print(cars)
+del cars[0]
+print(cars)
+cars.sort()
+print(cars)
+cars.sort(reverse=True)
+print(cars)
+print(len(cars))
+cars.append('bmw x5')
+print(cars)
+print(cars[2].title())
+print(cars[-1].upper()) # convenient coincidence
+
+# 3-11 Intentional error => done
