@@ -72,4 +72,28 @@ print(f"Sarah's favorite language is {language}.")
 
 # Using get()
 
+alien_0 = {'color': 'green', 'speed': 'slow'}
+#point_value = alien_0.get('points', 'No point value assigned.')
+point_value = alien_0.get('points') # No second key => Python returns 'None'; this is not an error.
+print(point_value)
 
+# 6-1 Person
+
+print()
+person = {'first_name': 'giuliano', 'surname': 'sison', 'age': 34, 'city': 'london'}
+#for element in person:
+print(person['first_name'].title())
+print(person['surname'].title())
+print(person['age'])
+print(person['city'].title())
+
+# 6-2 Favorite numbers
+
+print()
+favorite_numbers = {
+    'paolo': 5,
+    'pauline': 7,
+    'giuliano': 11,
+    'emilio': 8,
+}
+print(favorite_numbers)
