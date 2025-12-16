@@ -401,3 +401,55 @@ for name, favorites in favorite_places.items():
         print(f"{name.title()}'s favorite places are:")
     for place in favorites:
         print(f"\t{place.title()}")
+
+# 6-10 Favorite numbers
+
+favorite_numbers = {
+    'paolo': [5, 7, 3],
+    'pauline': [7, 88],
+    'giuliano': [10, 11],
+    'emilio': [8, 1000],
+    'cj': [17],
+}
+
+for name, numbers in favorite_numbers.items():
+    if len(numbers) == 1:
+        print(f"\n{name.title()}'s favorite number is:")
+    else:
+        print(f"\n{name.title()}'s favorite numbers are:")
+    for number in numbers:
+        print(f"\t{number}")
+
+# 6-11 Cities
+
+cities = {
+    'tokyo': {
+        'country': 'japan',
+        'population': '20 million',
+        'fact': 'manga haven',
+    },
+    'annandale': {
+        'country': 'usa',
+        'population': '100 thousand',
+        'fact': 'koreatown',
+    },
+    'san franciso': {
+        'country': 'usa',
+        'population': '2 million',
+        'fact': 'golden gate bridge',
+    },
+}
+
+for city, facts in cities.items():
+    print(f"\nCity: {city.title()}")
+#    for fact in facts.values():
+    for key, value in facts.values():
+        print(f"\tCountry: {value}")
+        print(f"\tPopulation: {value}")
+        print(f"\tFact: {value}")
+
+#        if fact['country'] == 'usa':
+#            print(f"\tCountry: {fact.upper()}")
+#        else:
+#            print(f"\tCountry: {fact}")
+
