@@ -442,14 +442,49 @@ cities = {
 
 for city, facts in cities.items():
     print(f"\nCity: {city.title()}")
-#    for fact in facts.values():
-    for key, value in facts.values():
-        print(f"\tCountry: {value}")
-        print(f"\tPopulation: {value}")
-        print(f"\tFact: {value}")
+    for key, value in facts.items():
+        if value == 'usa':
+            print(f"\t{key.title()}: {value.upper()}")
+        elif key == 'population':
+            print(f"\t{key.title()}: {value}")
+        else:
+            print(f"\t{key.title()}: {value.title()}")
 
-#        if fact['country'] == 'usa':
-#            print(f"\tCountry: {fact.upper()}")
-#        else:
-#            print(f"\tCountry: {fact}")
+# 6-12 Extensions
 
+cities = {
+    'tokyo': {
+        'country': 'japan',
+        'population': 20_000_000,
+        'trivia': 'manga haven',
+        'closest sea': 'tokyo bay',
+    },
+    'annandale': {
+        'country': 'usa',
+        'population': 100_000,
+        'trivia': 'koreatown',
+        'closest sea': 'chesapeake',
+    },
+    'san franciso': {
+        'country': 'usa',
+        'population': 2_000_000,
+        'trivia': 'golden gate bridge', 
+        'closest sea': 'san francisco bay',
+    },
+    'manila': {
+        'country': 'philippines',
+        'population': 23_000_000,
+        'trivia': 'jeepneys', 
+        'closest sea': 'manila bay',
+    },
+}
+
+for city, trivia in cities.items():
+    print(f"\nCity: {city.title()}")
+    for key, value in trivia.items():
+        if value == 'usa':
+            print(f"\t{key.title()}: {value.upper()}")
+        elif key == 'population':
+            print(f"\t{key.title()}: {value}")
+        else: 
+            print(f"\t{key.title()}: {value.title()}")
