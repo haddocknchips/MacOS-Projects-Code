@@ -12,8 +12,9 @@
     | Harry |  50 | Maybe      |
 
     - [X] First item
-    - [ ] Second item
+    - [  ] Second item
     - [X] Third item
+      
 
      | Name   | Age | Hobby     |
      | Jim    |  16 | Badminton |
