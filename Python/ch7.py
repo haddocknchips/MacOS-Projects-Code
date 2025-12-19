@@ -26,12 +26,33 @@
 
 ### Modulo operator ###
 
-number = input("Enter a number, and I'll tell you if it's even or odd: ")
-number = int(number)
+#number = input("Enter a number, and I'll tell you if it's even or odd: ")
+#number = int(number)
+#
+#if number % 2 == 0:
+#    print(f"\nThe number {number} is even.")
+#else:
+#    print(f"\nThe number {number} is odd.")
 
-if number % 2 == 0:
-    print(f"\nThe number {number} is even.")
+# 7-1 Rental car
+
+#car = input("What kind of car would you want to rent? ")
+#print(f"\nLet me see if I can find a {car.title()}.")
+
+# 7-2 Restaurant seating
+
+#group_size = input("How many persons are in your group? ")
+#
+#if int(group_size) > 8:
+#    print("Please wait for a table to be free.")
+#else:
+#    print("Let me show you to your table.")
+
+# 7-3 Multiples of 10
+
+number = input("Enter a number: ")
+if int(number) % 10 == 0:
+    print("That number is a multiple of 10.")
 else:
-    print(f"\nThe number {number} is odd.")
-
+    print("That number is not a multiple of 10.")
 
