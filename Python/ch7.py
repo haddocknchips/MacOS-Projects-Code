@@ -50,9 +50,21 @@
 
 # 7-3 Multiples of 10
 
-number = input("Enter a number: ")
-if int(number) % 10 == 0:
-    print("That number is a multiple of 10.")
-else:
-    print("That number is not a multiple of 10.")
+#number = input("Enter a number: ")
+#if int(number) % 10 == 0:
+#    print("That number is a multiple of 10.")
+#else:
+#    print("That number is not a multiple of 10.")
+
+# Parrot while
+
+prompt = "\nTell me something, and I will repeat it back to you:"
+prompt += "\nEnter 'quit' to the the program. "
+
+message = ""
+while message != 'quit':
+    message = input(prompt)
+    if message != 'quit':
+        print(message)
+
 
