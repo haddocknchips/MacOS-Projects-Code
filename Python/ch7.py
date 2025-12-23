@@ -58,25 +58,82 @@
 
 # Parrot while
 
-prompt = "\nTell me something, and I will repeat it back to you:"
-prompt += "\nEnter 'quit' to the the program. "
-
-message = ""
-while message != 'quit':
-    message = input(prompt)
-    if message != 'quit':
-        print(message)
+#prompt = "\nTell me something, and I will repeat it back to you:"
+#prompt += "\nEnter 'quit' to the the program. "
+#
+#message = ""
+#while message != 'quit':
+#    message = input(prompt)
+#    if message != 'quit':
+#        print(message)
 
 # Using a flag
 
-prompt = "\nTell me something, and I will repeat it back to you:"
-prompt += "\nEnter 'quit' to the the program. "
+#prompt = "\nTell me something, and I will repeat it back to you:"
+#prompt += "\nEnter 'quit' to the the program. "
+#
+#active = True
+#
+#while active:
+#    message = input(prompt)
+#    if message == 'quit':
+#        active = False
+#    else:
+#        print(message)
 
-active = True
+# Using break to exit a loop
 
-while active:
-    message = input(prompt)
-    if message == 'quit':
-        active = False
-    else:
-        print(message)
+#prompt = "\nPlease enter the name of a city you visited:"
+#prompt += "\n(Enter 'quit' when you are finished.) "
+#
+#while True:
+#    city = input(prompt)
+#    
+#    if city == 'quit':
+#        break
+#    else:
+#        print(f"I'd love to go to {city.title()}!")
+
+# Using continue in a loop
+
+current_number = 0
+while current_number < 10:
+    current_number += 1
+    if current_number % 2 == 0:
+        continue
+
+    print(current_number)
+
+# 7.4 Pizza toppings
+
+#prompt = "\nEnter the toppings you want on your pizza:"
+#prompt += "\nEnter 'quit' when you are finished. "
+#
+#while True:
+#    topping = input(prompt)
+#    
+#    if topping == 'quit':
+#        break
+#
+#    else:
+#        print(f"\nI'll add {topping} to your pizza.")
+
+# 7-5 Movie tickets
+
+while True:
+    prompt = "\nWhat is your age? "
+    age = int(input(prompt))
+
+    if age < 3:
+        print("\n Your ticket is free!")
+        continue
+    if age >= 3 and age <= 12:
+        print("\nYour ticket costs $10.")
+        continue
+    if age > 12:
+        print("\n Your ticket costs $15.")
+        continue
+
+
+
+
