@@ -120,20 +120,123 @@ while current_number < 10:
 
 # 7-5 Movie tickets
 
-while True:
-    prompt = "\nWhat is your age? "
-    age = int(input(prompt))
+#while True:
+#    prompt = "\nWhat is your age? "
+#    age = int(input(prompt))
+#
+#    if age < 3:
+#        print("\n Your ticket is free!")
+#        continue
+#    if age >= 3 and age <= 12:
+#        print("\nYour ticket costs $10.")
+#        continue
+#    if age > 12:
+#        print("\n Your ticket costs $15.")
+#        continue
 
-    if age < 3:
-        print("\n Your ticket is free!")
-        continue
-    if age >= 3 and age <= 12:
-        print("\nYour ticket costs $10.")
-        continue
-    if age > 12:
-        print("\n Your ticket costs $15.")
-        continue
+# 7-6 Three exits
 
+#while True:
+#    prompt = "\nWhat is your age? Enter numbers greater than zero only. "
+#    age = input(prompt)
+#
+#    if age.isalpha(): # not yet in book
+#        print("\nCome back next time!")
+#        break
+#
+#    elif int(age) < 3:
+#        print("\n Your ticket is free!")
+#        continue
+#
+#    elif int(age) >= 3 and int(age) <= 12:
+#        print("\nYour ticket costs $10.")
+#        continue
+#
+#    elif int(age) > 12:
+#        print("\n Your ticket costs $15.")
+#        continue
 
+#count = 0
+#while count < 5:
+#    prompt = "\nWhat is your age? "
+#    age = int(input(prompt))
+#
+#    if age < 3:
+#        print("\n Your ticket is free!")
+#
+#    if age >= 3 and age <= 12:
+#        print("\nYour ticket costs $10.")
+#
+#    if age > 12:
+#        print("\n Your ticket costs $15.")
+#
+#    count += 1
 
+#while True:
+#    prompt = "\nWhat is your age? Type 'quit' to quit. "
+#    age = input(prompt)
+#
+#    if age == 'quit':
+#        print("\nCome back next time!")
+#        break
+#
+#    if int(age) < 3:
+#        print("\n Your ticket is free!")
+#        continue
+#
+#    if int(age) >= 3 and int(age) <= 12:
+#        print("\nYour ticket costs $10.")
+#        continue
+#
+#    if int(age) > 12:
+#        print("\n Your ticket costs $15.")
+#        continue
 
+# 7-7 Infinity
+
+#count = 0
+#while True:
+#    count += 1
+#    print(count)
+
+# mountain_poll.py
+
+#responses = {}
+#
+## Set a flag to indicate that polling is active.
+#polling_active = True
+#
+#while polling_active:
+#    # Prompt for the person's name and response.
+#    name = input("\nWhat is your name? ")
+#    response = input("Which mountain would you like to climb someday? ")
+#
+#    # Store the response in the dictionary.
+#    responses[name] = response
+#
+#    # Find out if anyone else is going to take the poll.
+#    repeat = input("Would you like let another person respond? (yes/ no) ")
+#
+#    if repeat == 'no':
+#        polling_active = False
+#
+## Polling is complete. Show the results.
+#print("\n--- Poll Results ---")
+#
+#for name, response in responses.items():
+#    print(f"{name} would like to climb {response}.")
+
+# 7-8 Deli
+
+sandwich_orders = ['pastrami', 'club', 'BLT', 'ham and cheese']
+finished_sandwiches = []
+
+while sandwich_orders:
+    sandwich = sandwich_orders.pop()
+    print(f"\nI made your {sandwich} sandwich.")
+    finished_sandwiches.append(sandwich) 
+
+print("\nHere are all the sandwiches made:")
+
+for order in finished_sandwiches:
+    print(f"{order} sandwich")
