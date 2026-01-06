@@ -228,15 +228,62 @@ while current_number < 10:
 
 # 7-8 Deli
 
-sandwich_orders = ['pastrami', 'club', 'BLT', 'ham and cheese']
-finished_sandwiches = []
+# sandwich_orders = ['pastrami', 'club', 'BLT', 'ham and cheese']
+# finished_sandwiches = []
+# 
+# while sandwich_orders:
+#     sandwich = sandwich_orders.pop()
+#     print(f"\nI made your {sandwich} sandwich.")
+#     finished_sandwiches.append(sandwich) 
+# 
+# print("\nHere are all the sandwiches made:")
+# 
+# for order in finished_sandwiches:
+#    print(f"{order} sandwich")
 
-while sandwich_orders:
-    sandwich = sandwich_orders.pop()
-    print(f"\nI made your {sandwich} sandwich.")
-    finished_sandwiches.append(sandwich) 
+# 7-9 No pastrami
 
-print("\nHere are all the sandwiches made:")
+#sandwich_orders = ['pastrami', 'club', 'pastrami', 'BLT', 'pastrami', 'ham and cheese']
+#finished_sandwiches = []
+#
+#print("\nSorry that we are out of pastrami today.")
+#
+#while 'pastrami' in sandwich_orders:
+#    sandwich_orders.remove('pastrami')
+#
+#while sandwich_orders:
+#    sandwich = sandwich_orders.pop()
+#    print(f"\nI made your {sandwich} sandwich.")
+#    finished_sandwiches.append(sandwich) 
+#
+#print("\nHere are all the sandwiches made:")
+#
+#for order in finished_sandwiches:
+#   print(f"{order} sandwich")
 
-for order in finished_sandwiches:
-    print(f"{order} sandwich")
+# 7-10 Dream vacation
+
+responses = {}
+
+polling_active = True
+
+while polling_active == True:
+
+    name = input("\nWhat's your name? ")
+    response = input("\nIf you could visit one place in the world, what would it be? ")
+
+    # Store responses in dictionary
+    responses[name] = response
+
+    # Check if more participants
+    repeat = input("\nWould you like another person to respond? (yes/ no) ")
+
+    if repeat == 'no':
+        polling_active = False 
+
+# Print results
+
+print("\n--- Poll Results ---")
+
+for name, response in responses.items():
+    print(f"{name} would like to visit {response}.")
